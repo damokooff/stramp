@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎵 Mon Stream Musical</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <h1>🎵 Mon Stream Musical</h1>
+    
+    <div class="now-playing">
+      <div class="cover">🎧</div>
+      <div class="info">
+        <h2 id="track-title">Aucune piste</h2>
+        <p id="track-artist">Sélectionne une musique</p>
+      </div>
+    </div>
+
+    <audio id="audio" controls preload="metadata"></audio>
+
+    <div class="controls">
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭️</button>
+      <button id="shuffle" title="Aléatoire">🔀</button>
+      <button id="loop" title="Répéter">🔁</button>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="search" placeholder="🔍 Rechercher une musique...">
+    </div>
+
+    <ul id="playlist" class="playlist"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
